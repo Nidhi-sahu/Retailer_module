@@ -1,24 +1,49 @@
-import logo from './logo.svg';
+
 import './App.css';
+import{Routes,Route} from 'react-router-dom'
+//import { BrowserRouter } from 'react-router-dom';
+import Sidebar, { Sidebaar } from './Component/Sidebar';
+import Dashboard from './Pages/Dashboard';
+import Product from './Pages/Product';
+import Banking from './Pages/Banking';
+import Rating from './Pages/Rating';
+import BookingDetail from './Pages/BookingDetail';
+import { BrowserRouter as Router } from 'react-router-dom';
+// import Login from './Pages/Login.jsx';
+import Navbaar from './Component/Navbaar';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <div> 
+          {/* <div>
+      <Navbaar/>
+      </div>   
+      
+      
+        <div> 
+    <Sidebaar/>
+    
+   </div>   */}
+    
+
+    <Routes> 
+      {/* <Route path="/" element={<Login/>}/>  */}
+        <Route path="/dashboard" element={<Dashboard/>}/>
+      <Route path="/product" element={<Product/>}/>
+      <Route path="/banking" element={<Banking/>}/>
+      <Route path="/rating" element={<Rating/>} />
+      <Route path="/bankingdetail" element={<BookingDetail/>}/>
+    </Routes>
+    
+   </div>   
+    
+    
+      
+    
+   </> 
+   
   );
 }
 

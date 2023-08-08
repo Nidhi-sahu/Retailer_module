@@ -1,0 +1,40 @@
+.sidebaar{
+    left:0;
+    width: 200px;
+    height:92vh;
+    background:black;
+    margin-top: -40px;
+   
+} 
+  .sidebaar header{
+    /* font-size: 25px; */
+   color:black ;
+    text-align: center;
+    margin-right:10px;
+   line-height: 70px; 
+    background: 063146;
+    user-select:none;
+  }
+  /* h3{
+    margin-top:30px;
+    
+    list-style:none;
+    
+   
+  } */
+.sidebaar ul {
+    display: block;
+    height: 50%;
+    margin-top:10px;
+width: 100%;
+line-height: 65px;
+font-size:15px;
+margin-Top:40px;
+padding-top: 30px;
+padding-left: 27px;
+color:black;
+list-style: circle;
+box-sizing: border-box;
+border-top: 1px solid rgba(255,255,255,.1);
+
+}
